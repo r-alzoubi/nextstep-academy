@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextStep Digital Academy</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+</head>
+
+<body>
+<!-- Progress Indicator -->
+<div class="page-progress">
+  <span id="progressBar"></span>
+</div>
+
+  <!-- ===== Navbar ===== -->
+ <header class="nav">
+  <div class="nav__inner">
+
+    <a class="brand" href="#home">
+      <img src="assets/logo2.png" alt="NextStep Digital Academy Logo" />
+    </a>
+
+    <div class="container nav__menu">
+      <nav class="menu">
+        <a href="#home" class="menu-link">Home</a>
+        <a href="#courses" class="menu-link">Courses</a>
+        <a href="#whyus" class="menu-link">Why Us</a>
+        <a href="#testimonials" class="menu-link">feedback</a>
+        <a href="#quiz" class="menu-link">Quiz</a>
+        <a href="#faq" class="menu-link">FAQ</a>
+        <a class="btn btn--small" href="#contact">Enroll</a>
+      </nav>
+    </div>
+
+  </div>
+
+  <div class="burger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+</header>
+
+
+  <!-- ===== Hero ===== -->
+  <main id="home" class="hero">
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="hero__tag">NextStep Digital Academy</p>
+
+        <h1 class="hero__title">
+          Build Your Digital Marketing Career
+        </h1>
+
+        <!-- Rotating Text (JS will change it) -->
+        <p class="hero__subtitle">
+          <span id="rotating-text">Build Your Digital Future</span>
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn" href="#contact">Enroll Now</a>
+          <a class="btn btn--ghost" href="#courses">View Courses</a>
+        </div>
+
+        <p class="hero__note">Practical projects • Certified trainers • Flexible schedule</p>
+      </div>
+
+      <div class="hero__card" aria-label="Quick stats">
+
+  <div class="stat">
+    <div class="stat__num" data-value="12" data-suffix="+">0</div>
+    <div class="stat__label">Courses</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat__num" data-value="300" data-suffix="+">0</div>
+    <div class="stat__label">Students</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat__num" data-value="4.8" data-suffix="/5">0</div>
+    <div class="stat__label">Rating</div>
+  </div>
+
+</div>
+
+
+    </div>
+  </main>
+
+
+
+  <!-- ===== Courses Section ===== -->
+<section id="courses" class="courses">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Our Courses</h2>
+      <p>Practical courses designed to prepare you for the digital market</p>
+    </div>
+
+    <div class="courses-slider">
+
+  <button class="slider-btn prev">‹</button>
+
+  <div class="courses-viewport">
+    <div class="courses-track">
+
+      <!-- Course 1 -->
+<div
+  class="course-card"
+  data-title="Digital Marketing Fundamentals"
+  data-desc="This course introduces the core concepts of digital marketing, including SEO fundamentals, social media platforms, content marketing strategies, and campaign planning. Perfect for beginners looking to build a strong foundation in digital marketing."
+  data-level="Beginner"
+  data-duration="4 Weeks"
+  data-certificate="Yes"
+>
+  <h3>Digital Marketing Fundamentals</h3>
+  <p>SEO, social media, content marketing and campaign basics.</p>
+  <span class="course-level">Beginner</span>
+</div>
+
+<!-- Course 2 -->
+<div
+  class="course-card"
+  data-title="Social Media Advertising"
+  data-desc="Learn how to create, launch, and optimize paid advertising campaigns across Facebook, Instagram, and TikTok. This course focuses on targeting, creatives, budgeting, and performance optimization."
+  data-level="Intermediate"
+  data-duration="3 Weeks"
+  data-certificate="Yes"
+>
+  <h3>Social Media Advertising</h3>
+  <p>Create and manage paid ads on Facebook, Instagram and TikTok.</p>
+  <span class="course-level">Intermediate</span>
+</div>
+
+<!-- Course 3 -->
+<div
+  class="course-card"
+  data-title="SEO & Content Strategy"
+  data-desc="Master on-page and off-page SEO techniques while learning how to build content strategies that rank on search engines and convert visitors into customers."
+  data-level="Intermediate"
+  data-duration="4 Weeks"
+  data-certificate="Yes"
+>
+  <h3>SEO & Content Strategy</h3>
+  <p>Rank websites and build content strategies that convert.</p>
+  <span class="course-level">Intermediate</span>
+</div>
+
+<!-- Course 4 -->
+<div
+  class="course-card"
+  data-title="Analytics & Performance Tracking"
+  data-desc="Understand how to measure, analyze, and improve digital marketing performance using Google Analytics, dashboards, KPIs, and professional reporting techniques."
+  data-level="Advanced"
+  data-duration="3 Weeks"
+  data-certificate="Yes"
+>
+  <h3>Analytics & Performance Tracking</h3>
+  <p>Measure performance using Google Analytics and reporting tools.</p>
+  <span class="course-level">Advanced</span>
+</div>
+
+<!-- Course 5 -->
+<div
+  class="course-card"
+  data-title="Email Marketing"
+  data-desc="Learn how to build email lists, create automated email funnels, design high-converting campaigns, and improve customer retention through email marketing."
+  data-level="Beginner"
+  data-duration="2 Weeks"
+  data-certificate="Yes"
+>
+  <h3>Email Marketing</h3>
+  <p>Build automated email funnels and campaigns.</p>
+  <span class="course-level">Beginner</span>
+</div>
+
+<!-- Course 6 -->
+<div
+  class="course-card"
+  data-title="Brand Strategy"
+  data-desc="Discover how to create strong digital brand identities, define brand positioning, build brand voice, and maintain consistency across all digital channels."
+  data-level="Intermediate"
+  data-duration="3 Weeks"
+  data-certificate="Yes"
+>
+  <h3>Brand Strategy</h3>
+  <p>Create strong digital brand identities.</p>
+  <span class="course-level">Intermediate</span>
+</div>
+
+<!-- Course 7 -->
+<div
+  class="course-card"
+  data-title="Google Ads"
+  data-desc="Learn how to launch, manage, and optimize Google Search and Display campaigns, including keyword research, bidding strategies, ad copywriting, and conversion tracking."
+  data-level="Advanced"
+  data-duration="4 Weeks"
+  data-certificate="Yes"
+>
+  <h3>Google Ads</h3>
+  <p>Launch and optimize search and display campaigns.</p>
+  <span class="course-level">Advanced</span>
+</div>
+
+<!-- Course 8 -->
+<div
+  class="course-card"
+  data-title="Marketing Automation"
+  data-desc="Automate marketing workflows and customer journeys using modern automation tools. Learn lead nurturing, segmentation, triggers, and CRM integration."
+  data-level="Advanced"
+  data-duration="4 Weeks"
+  data-certificate="Yes"
+>
+  <h3>Marketing Automation</h3>
+  <p>Automate workflows and customer journeys.</p>
+  <span class="course-level">Advanced</span>
+</div>
+
+
+    </div>
+  </div>
+
+  <button class="slider-btn next">›</button>
+
+</div>
+
+<p class="courses-note">
+  Showing selected courses. More specialized programs are available upon enrollment.
+</p>
+
+  </div>
+</section>
+
+<!-- ===== Why Us Section ===== -->
+<section id="whyus" class="why-us">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Why Choose NextStep?</h2>
+      <p>What makes our academy different</p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">🎯</div>
+        <h3>Practical Learning</h3>
+        <p>Hands-on training focused on real market skills.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">👩‍🏫</div>
+        <h3>Expert Trainers</h3>
+        <p>Learn from professionals with real industry experience.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🚀</div>
+        <h3>Career-Oriented</h3>
+        <p>Courses designed to help you grow and get hired.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">📊</div>
+        <h3>Updated Content</h3>
+        <p>Always aligned with the latest digital trends.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Testimonials Section ===== -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>What Our Students Say</h2>
+      <p>Real feedback from our trainees</p>
+    </div>
+
+    <div class="testimonials-wrapper">
+
+      <button class="testimonial-btn prev">‹</button>
+
+      <div class="testimonials-viewport">
+        <div class="testimonials-track">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <p>
+              “The courses were practical and helped me understand digital marketing in a real way.”
+            </p>
+            <h4>Ahmad Saleh</h4>
+            <span>Digital Marketing Student</span>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <p>
+              “Amazing trainers and updated content. I feel confident starting my career now.”
+            </p>
+            <h4>Sarah Khaled</h4>
+            <span>Content Creator</span>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <p>
+              “The learning environment was supportive and focused on real skills.”
+            </p>
+            <h4>Omar Nasser</h4>
+            <span>Marketing Specialist</span>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="testimonial-btn next">›</button>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Quiz ===== -->
+
+<section class="quiz" id="quiz">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Which Digital Career Fits You?</h2>
+      <p>Answer 4 quick questions and discover your perfect path</p>
+    </div>
+
+    <div class="quiz-box">
+
+      <!-- Question -->
+      <h3 id="quiz-question"></h3>
+
+      <!-- Options -->
+      <div class="quiz-options" id="quiz-options"></div>
+
+      <!-- Progress -->
+      <div class="quiz-progress">
+        Question <span id="current-step">1</span> of <span id="total-steps">4</span>
+      </div>
+
+    </div>
+
+    <!-- Result -->
+    <div class="quiz-result" id="quiz-result">
+      <h3 id="result-title"></h3>
+      <p id="result-desc"></p>
+
+      <a
+        id="result-enroll"
+        class="btn"
+        target="_blank"
+        rel="noopener"
+        style="background: linear-gradient(135deg, #f1f1f1ec, #fffffff3); color: #245dd9ec;"
+      >
+        💬 Enroll in This Path 
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== Contact / Enroll Section ===== -->
+<section id="contact" class="contact">
+  <div class="container contact-grid">
+
+    <div class="contact-info">
+      <h2>Enroll With Us</h2>
+      <p>
+        Ready to take the next step in your digital career?
+        Fill out the form and our team will contact you shortly.
+      </p>
+
+      <ul class="contact-details">
+        <li>📍 Amman, Jordan</li>
+        <li>📧 info@nextstepacademy.com</li>
+        <li>📞 +962 7 9000 0000</li>
+      </ul>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="number" placeholder="Phone Number" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Interested Course" />
+      <textarea placeholder="Message"></textarea>
+
+      <button type="submit" class="btn">Send Request</button>
+      <p class="form-success">Your request has been sent successfully!</p>
+    </form>
+
+  </div>
+</section>
+
+<!-- ===== faq ===== -->
+
+<section class="faq" id="faq">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know before enrolling</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Are the courses online or onsite?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            All courses are fully online and accessible from anywhere, allowing you to learn at your own pace.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do I receive a certificate after completion?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Yes, you will receive a professional certificate upon successfully completing the course.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Are these courses suitable for beginners?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Absolutely. We offer beginner, intermediate, and advanced levels to suit all learners.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How long does each course take?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Course duration ranges from 2 to 4 weeks depending on the course content and level.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How can I enroll?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Simply click the Enroll button on any course or contact us directly via WhatsApp.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-content">
+
+    <div class="footer-brand">
+      <h3>NextStep Digital Academy</h3>
+      <p>Build Your Digital Future</p>
+    </div>
+
+    <div class="footer-social">
+  <a href="#" aria-label="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+  <a href="#" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="#" aria-label="LinkedIn">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+</div>
+
+
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 NextStep Digital Academy. All rights reserved.
+  </div>
+</footer>
+
+
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+  <!-- Sticky Mobile CTA -->
+
+
+<!-- Course Details Modal -->
+<div class="course-modal" id="courseModal">
+  <div class="course-modal-content">
+
+    <!-- Close -->
+    <button class="modal-close" id="closeModal">&times;</button>
+
+    <!-- Title -->
+    <h3 id="modalTitle"></h3>
+
+    <!-- Description -->
+    <p id="modalDescription"></p>
+
+    <!-- Meta Info -->
+    <div class="course-meta">
+      <div class="meta-item">
+        <span>⏱ Duration</span>
+        <strong id="modal-duration"></strong>
+      </div>
+
+      <div class="meta-item">
+        <span>🎓 Certificate</span>
+        <strong id="modal-certificate"></strong>
+      </div>
+
+      <div class="meta-item">
+        <span>📈 Level</span>
+        <strong id="modal-level"></strong>
+      </div>
+    </div>
+<center>
+    <!-- CTA -->
+    <a
+      id="modalWhatsapp"
+      class="btn"
+      target="_blank"
+      rel="noopener"
+    >
+      💬 Enroll via WhatsApp
+    </a>
+</center>
+  </div>
+</div>
+
+
+<div class="mobile-cta">
+  
+<a
+  href="https://wa.me/962786006759?text=Hello%20NextStep%20Academy,%20I%20would%20like%20to%20enroll%20in%20a%20course."
+  class="mobile-cta-btn"
+  target="_blank"
+  rel="noopener"
+>
+  💬 Enroll via WhatsApp
+</a>
+
+
+</div>
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
